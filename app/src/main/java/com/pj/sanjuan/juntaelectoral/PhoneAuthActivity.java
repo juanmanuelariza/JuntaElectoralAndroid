@@ -72,6 +72,7 @@ public class PhoneAuthActivity extends AppCompatActivity implements
 
     private TextView mStatusText;
     private TextView mDetailText;
+    private TextView mTextExample;
 
     private EditText mPhoneNumberField;
     private EditText mVerificationField;
@@ -100,6 +101,7 @@ public class PhoneAuthActivity extends AppCompatActivity implements
         mDetailText = (TextView) findViewById(R.id.detail);
 
         mPhoneNumberField = (EditText) findViewById(R.id.field_phone_number);
+        mTextExample = (TextView) findViewById(R.id.text_example);
         mVerificationField = (EditText) findViewById(R.id.field_verification_code);
 
 
@@ -473,13 +475,14 @@ public class PhoneAuthActivity extends AppCompatActivity implements
                 mVerifyButton.setVisibility(View.VISIBLE);
                 mStartButton.setVisibility(View.INVISIBLE);
                 mPhoneNumberField.setVisibility(View.INVISIBLE);
+                mTextExample.setVisibility(View.INVISIBLE);
 
 
                 break;
             case R.id.button_verify_phone:
                 String code = mVerificationField.getText().toString();
                 if (TextUtils.isEmpty(code)) {
-                    mVerificationField.setError("Cannot be empty.");
+                    mVerificationField.setError("Por favor ingresa el código.");
                     return;
                 }
 

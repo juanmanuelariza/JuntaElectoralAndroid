@@ -100,4 +100,5 @@ public class IndexActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

@@ -69,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
 
         if(temporary!= null && !temporary.isEmpty()){
 
-            Intent y = new Intent(MainActivity.this, IndexActivity.class);
-            y.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            y.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(y);
+//            Intent y = new Intent(MainActivity.this, IndexActivity.class);
+//            y.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            y.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            startActivity(y);
 
         }
 
@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
 
 
     public void signoutbutton(View s) {
@@ -128,7 +129,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
     public void goIndexbutton(View s) {
 
         Intent y = new Intent(MainActivity.this, IndexActivity.class);

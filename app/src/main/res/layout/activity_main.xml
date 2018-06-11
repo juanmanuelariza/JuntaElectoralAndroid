@@ -13,8 +13,8 @@
         style="@android:style/Widget.Material.Button"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_alignStart="@+id/Index"
-        android:layout_below="@+id/Index"
+        android:layout_alignStart="@+id/Home"
+        android:layout_below="@+id/Home"
         android:layout_marginTop="35dp"
         android:backgroundTint="@color/colorAccent"
         android:onClick="signoutbutton"
@@ -26,7 +26,7 @@
 
     <Button
 
-        android:id="@+id/Index"
+        android:id="@+id/Home"
         style="@android:style/Widget.Material.Button"
         android:layout_width="140dp"
         android:layout_height="50dp"
