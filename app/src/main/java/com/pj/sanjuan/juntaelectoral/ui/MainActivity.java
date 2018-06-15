@@ -80,7 +80,8 @@ public class MainActivity extends AppCompatActivity {
         else{
 
 
-            Intent y = new Intent(MainActivity.this, PhoneAuthActivity.class);
+            //Intent y = new Intent(MainActivity.this, PhoneAuthActivity.class);
+            Intent y = new Intent(MainActivity.this, IndexActivity.class);
             y.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             y.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(y);
@@ -109,7 +110,8 @@ public class MainActivity extends AppCompatActivity {
                             editor.apply();
                             mAuth.signOut();
 
-                            Intent y = new Intent(MainActivity.this, PhoneAuthActivity.class);
+                            //Intent y = new Intent(MainActivity.this, PhoneAuthActivity.class);
+                            Intent y = new Intent(MainActivity.this, IndexActivity.class);
                             y.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             y.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(y);

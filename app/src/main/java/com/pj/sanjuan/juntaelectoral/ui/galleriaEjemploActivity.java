@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.pj.sanjuan.juntaelectoral.R;
 import com.pj.sanjuan.juntaelectoral.io.JuntaElectoralAPI;
+import com.pj.sanjuan.juntaelectoral.models.Departamento;
 import com.pj.sanjuan.juntaelectoral.models.Persona;
 
 import java.util.ArrayList;
@@ -19,10 +20,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class galleriaEjemploActivity extends AppCompatActivity {
-    private final String baseURL = "http://192.168.100.5:59372/";
+    private final String baseURL = "http://200.0.236.210/AresAPI/";
     TextView tvNombre;
     TextView tvDNI;
-    List<Persona> listaPersonas = new ArrayList<>();
+    List<Departamento> listaPersonas = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +42,11 @@ public class galleriaEjemploActivity extends AppCompatActivity {
 
         JuntaElectoralAPI service = retrofit.create(JuntaElectoralAPI.class);
 
-        Call<List<Persona>> lista = service.getPersonas();
+        Call<List<Departamento>> lista = service.getDepartamento();
 
-        lista.enqueue(new Callback<List<Persona>>() {
+        lista.enqueue(new Callback<List<Departamento>>() {
             @Override
-            public void onResponse(Call<List<Persona>> call, Response<List<Persona>> response) {
+            public void onResponse(Call<List<Departamento>> call, Response<List<Departamento>> response) {
                 if(response.isSuccessful()) {
                     listaPersonas = response.body();
                     tvNombre = (TextView) findViewById(R.id.tvPersonaNombre);
@@ -53,13 +54,11 @@ public class galleriaEjemploActivity extends AppCompatActivity {
                 }
                 else{
 
-                    tvNombre = (TextView) findViewById(R.id.tvPersonaNombre);
-                    tvNombre.setText("else");
                 }
             }
 
             @Override
-            public void onFailure(Call<List<Persona>> call, Throwable t) {
+            public void onFailure(Call<List<Departamento>> call, Throwable t) {
 
                 tvNombre = (TextView) findViewById(R.id.tvPersonaNombre);
                 tvNombre.setText("Error");

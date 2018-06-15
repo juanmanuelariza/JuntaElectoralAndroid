@@ -1,5 +1,6 @@
 package com.pj.sanjuan.juntaelectoral.io;
 
+import com.pj.sanjuan.juntaelectoral.models.Departamento;
 import com.pj.sanjuan.juntaelectoral.models.Persona;
 
 import java.util.List;
@@ -12,6 +13,10 @@ import retrofit2.http.GET;
  */
 
 public interface JuntaElectoralAPI {
-    @GET("api/Personas")
+    @GET("api/CentroDeSalud/Map")
     Call<List<Persona>> getPersonas();
+
+    @GET("api/Departamento")
+    Call<List<Departamento>> getDepartamento();
+
 }
