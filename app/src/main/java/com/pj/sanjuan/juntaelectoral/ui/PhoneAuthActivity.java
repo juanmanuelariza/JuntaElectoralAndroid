@@ -1,4 +1,4 @@
-package com.pj.sanjuan.juntaelectoral;
+package com.pj.sanjuan.juntaelectoral.ui;
 
 
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.ButtonBarLayout;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -18,7 +17,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.FirebaseTooManyRequestsException;
@@ -33,9 +31,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.iid.FirebaseInstanceId;
-
-import org.w3c.dom.Text;
+import com.pj.sanjuan.juntaelectoral.R;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package com.pj.sanjuan.juntaelectoral;
+package com.pj.sanjuan.juntaelectoral.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.pj.sanjuan.juntaelectoral.R;
 
 public class IndexActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

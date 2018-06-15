@@ -1,4 +1,4 @@
-package com.pj.sanjuan.juntaelectoral;
+package com.pj.sanjuan.juntaelectoral.ui;
 
 
 import android.content.DialogInterface;
@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.pj.sanjuan.juntaelectoral.R;
 
 public class MainActivity extends AppCompatActivity {
 
