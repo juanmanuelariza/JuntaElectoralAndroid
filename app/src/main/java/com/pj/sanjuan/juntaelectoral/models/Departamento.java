@@ -18,11 +18,11 @@ public class Departamento {
     private Integer zona;
 
     public Integer getID() {
-        return iD;
+        return getiD();
     }
 
     public void setID(Integer iD) {
-        this.iD = iD;
+        this.setiD(iD);
     }
 
     public String getNombre() {
@@ -41,4 +41,11 @@ public class Departamento {
         this.zona = zona;
     }
 
+    public Integer getiD() {
+        return iD;
+    }
+
+    public void setiD(Integer iD) {
+        this.iD = iD;
+    }
 }
